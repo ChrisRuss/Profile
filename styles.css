@@ -71,5 +71,5 @@ img{max-width:100%; height:auto; display:block}
   .cards{grid-template-columns:1fr}
 }
 html.light{ --bg:#ffffff; --fg:#0b1020; --muted:#4b5563; --card:#f1f5f9; --accent:#2563eb; --accent-2:#059669; --border:#e5e7eb }
-.site-header{background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.75))}
-.contact input, .contact textarea{background:#fff}
+html.light .site-header{background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.75))}
+html.light .contact input, html.light .contact textarea{background:#fff; color:#0b1020; border-color:#e5e7eb}
