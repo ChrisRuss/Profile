@@ -38,3 +38,23 @@ if (form){
     }
   });
 }
+
+// Calendly modal logic
+const modal = document.getElementById('calModal');
+const openBtns = document.querySelectorAll('[data-cal-open]');
+const closeBtn = document.getElementById('calClose');
+
+function openModal(){
+  if(!modal) return;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){
+  if(!modal) return;
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+openBtns.forEach(btn => btn.addEventListener('click', (e)=>{ e.preventDefault(); openModal(); }));
+if (closeBtn) closeBtn.addEventListener('click', closeModal);
+if (modal) modal.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
+window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });

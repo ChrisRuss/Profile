@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Christian Russ – AI Strategy & Delivery</title>
-  <meta name="description" content="AI & Product Strategy, GenAI/LLMs, Agent Automation. From idea to measurable impact: strategy, MVPs, scale.">
+  <title>Christian Russ – AI Strategy & Automation</title>
+  <meta name="description" content="I help you build an internal AI operating system and turn processes into intelligent automation — secure, measurable, pragmatic.">
   <link rel="canonical" href="https://christianruss.ai/en/">
-  <meta property="og:title" content="Christian Russ – AI Strategy & Delivery">
-  <meta property="og:description" content="AI & Product Strategy, GenAI/LLMs, Agent Automation. From idea to measurable impact: strategy, MVPs, scale.">
+  <meta property="og:title" content="Christian Russ – AI Strategy & Automation">
+  <meta property="og:description" content="I help you build an internal AI operating system and turn processes into intelligent automation — secure, measurable, pragmatic.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://christianruss.ai/en/">
   <meta property="og:image" content="https://christianruss.ai/assets/og-banner.jpg">
@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css" />
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <script defer src="../script.js"></script>
   
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
@@ -25,24 +27,6 @@
   <link rel="icon" href="../assets/favicon.ico">
   <link rel="manifest" href="../site.webmanifest">
 
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Christian Russ",
-  "jobTitle": "Advisor for AI & Product Strategy",
-  "description": "AI Strategy & Delivery (GenAI/LLMs, Agents, AI Product Management).",
-  "url": "https://christianruss.ai/en/",
-  "image": "https://christianruss.ai/assets/portrait.jpg",
-  "sameAs": [
-    "https://www.linkedin.com/in/chrruss"
-  ],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Foogoo GmbH"
-  }
-}
-  </script>
 </head>
 <body>
 <header class="site-header">
@@ -53,12 +37,13 @@
   <nav class="nav" aria-label="Main">
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
     <ul id="nav-list">
-      <li><a href="../#leistungen">Services</a></li>
-      <li><a href="../#ergebnisse">Selected Outcomes</a></li>
-      <li><a href="../#vorgehen">How I work</a></li>
-      <li><a href="../#cv">Experience</a></li>
-      <li><a href="../#kontakt">Contact</a></li>
-      <li><a href="../">DE</a></li>
+      <li><a href="../#angebot">DE</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why me</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li><button id="modeToggle" class="mode-toggle" aria-label="Dark/Light">☾</button></li>
     </ul>
   </nav>
@@ -68,9 +53,10 @@
   <section class="hero" role="region" aria-label="Hero">
     <div class="hero-wrap">
       <div class="hero-content">
-        <h1>AI Strategy & Delivery<br> that <span class="accent">drives outcomes</span>.</h1>
-        <p class="lead">Computer Science graduate, Head of Product (E-Health), former founder. I help organizations turn <strong>GenAI/LLMs & Agents</strong> into <strong>measurable business impact</strong>—fast, secure, and compliant.</p>
-        <div class="cta"><a class="btn primary" href="mailto:info@christianruss.ai?subject=Inquiry%3A%20AI%20Strategy%20%26%20Delivery&body=Hi%20Christian%2C%0A%0Awe%27d%20like%20to%20book%20a%2030-min%20intro%20call.%20Quick%20context%3A%0A-%20Industry%3A%0A-%20Goals%3A%0A-%20Status%20(use%20cases%2C%20data%2C%20tools)%3A%0A%0AThanks!">Book intro call</a><a class="btn ghost" href="#leistungen">What I offer</a><a class="btn cal" target="_blank" rel="noopener" href="https://calendly.com/kontakt-foogoo/30min">Book via Calendly</a></div>
+        <h1>AI Strategy & Automation<br> for Mid-Sized Enterprises</h1>
+        <p class="lead">I help organizations develop and <strong>implement AI strategy</strong> — from <strong>process automation</strong> to building an <strong>internal AI operating system</strong> that makes AI usable across teams. Goal: <strong>measurable business impact</strong>, delivered securely and GDPR-aligned.</p>
+        <p class="proof">Experience as Head of Product • 10+ years Product & Delivery</p>
+        <div class="cta"><a class="btn primary" href="mailto:info@christianruss.ai?subject=Intro%20call%20AI%20strategy%20%26%20automation">Book intro call</a><a class="btn ghost" href="#services">What I offer</a><a class="btn cal" href="#" data-cal-open>Book via Calendly</a></div>
         <ul class="open-to"><li>Advisory</li><li>Delivery (PoC→MVP→Scale)</li><li>Enablement</li></ul>
         <ul class="trust"><li>AI Strategy & Product</li><li>LLMs & Agent Automation</li><li>Cybersecurity, Compliance & Governance</li></ul>
       </div>
@@ -78,38 +64,37 @@
     </div>
   </section>
 
-  <section id="leistungen" class="section">
-    <h2>Services</h2>
-    <div class="cards"><article class="card"><h3>AI Strategy</h3><p>From vision to roadmap: priorities, business case, KPIs & governance.</p><ul><li>Discovery & portfolio</li><li>Guardrails, security & compliance</li><li>Buy/build/partner</li></ul></article><article class="card"><h3>GenAI/LLMs & Agents</h3><p>Production-grade use cases: retrieval, orchestration, evaluation.</p><ul><li>LLM patterns & tool integration</li><li>Agent automation</li><li>Evaluation, observability & cost tracking</li></ul></article><article class="card"><h3>MVP → Scale</h3><p>Test quickly, scale safely.</p><ul><li>PoC/MVP (cloud-ready)</li><li>Product management & roadmaps</li><li>Reliability, monitoring, governance</li></ul></article><article class="card"><h3>Enablement</h3><p>Upskill teams & embed standards.</p><ul><li>Workshops & trainings</li><li>Prompting & pattern playbooks</li><li>Coaching for PM/PO & tech</li></ul></article></div>
+  <section id="services" class="section">
+    <h2>What I offer</h2>
+    <div class="cards"><article class="card"><h3>AI Strategy & Roadmap</h3><p>Turn business goals into prioritized use cases, clear KPIs, and a roadmap — no pilot purgatory.</p><ul><li>Use-case portfolio & business case</li><li>Target state & governance</li><li>Execution plan with quick wins</li></ul></article><article class="card"><h3>Process Automation with AI</h3><p>Analyze workflows and automate where AI truly adds value — efficient and pragmatic.</p><ul><li>Workflow analysis & prioritization</li><li>Agents & assistants in processes</li><li>Quality, cost, adoption</li></ul></article><article class="card"><h3>AI Platform (Your AI Operating System)</h3><p>An internal platform that works like company-wide ChatGPT — on your data, with your guardrails.</p><ul><li>Secure LLM & tool integrations</li><li>Data connectors & RAG</li><li>Operations, monitoring, cost control</li></ul></article><article class="card"><h3>Data & AI Governance</h3><p>Security, privacy, and compliance by design — practical, not bureaucratic.</p><ul><li>Roles & policies</li><li>Risk/approval processes</li><li>Documentation & training</li></ul></article><article class="card"><h3>End-to-End Delivery</h3><p>I don’t just advise — I deliver with you. From prototype and MVP to rollout, together with your team.</p><ul><li>Prototypes with real users</li><li>Integration into existing systems</li><li>Enablement & handover</li></ul></article></div>
   </section>
 
-  <section id="ergebnisse" class="section alt">
-    <h2>Selected Outcomes</h2>
-    <div class="highlights"><div class="highlight"><h3>Product turnaround</h3><p>From loss to profitability via new products, markets & operational excellence.</p></div><div class="highlight"><h3>E-health delivery</h3><p>E-prescription component “ApoVZD” delivered on time & budget; coordinated identity & infrastructure.</p></div><div class="highlight"><h3>Security & Compliance</h3><p>Supported ISMS setup; focus on cybersecurity, compliance & governance.</p></div><div class="highlight"><h3>AI initiatives</h3><p>Agent-based recruiting, AI e-commerce (personalized products), coding-factory approaches.</p></div></div>
+  <section id="why" class="section alt">
+    <h2>Why work with me</h2>
+    <div class="highlights"><div class="highlight"><h3>Business <strong>and</strong> Tech</h3><p>Computer Science background, Head of Product (e-health), founder — I speak C-level and engineering.</p></div><div class="highlight"><h3>Outcome-driven</h3><p>Projects are scoped for measurable impact — not slides.</p></div><div class="highlight"><h3>Security & Compliance first</h3><p>Experience in regulated industries; GDPR, governance, and operations built-in.</p></div><div class="highlight"><h3>Hands-on partner</h3><p>No ‘report and run’ — I help architect, integrate, and ship.</p></div><div class="highlight"><h3>Flexible engagement</h3><p>Advisory, implementation partner, or interim — depending on your needs.</p></div></div>
   </section>
 
-  <section id="vorgehen" class="section">
-    <h2>How I work</h2>
-    <ol class="process"><li><strong>Discovery (2–3 weeks)</strong> Use-case funnel, data/tool landscape, quick wins, KPIs, risks.</li><li><strong>MVP (4–8 weeks)</strong> Prototypes with real users, evaluation framework, cost & quality.</li><li><strong>Scale (8–16 weeks)</strong> Reliability, monitoring, security/compliance, enablement & change.</li></ol>
+  <section id="approach" class="section">
+    <h2>How we work</h2>
+    <ol class="process"><li><strong>Discovery (2–3 weeks)</strong> Use-case funnel, data/tool landscape, quick wins, KPIs, risks.</li><li><strong>Build (4–8 weeks)</strong> Prototype/MVP with real users, evaluation framework, cost & quality.</li><li><strong>Scale (8–16 weeks)</strong> Reliability, monitoring, security/compliance, enablement & change.</li></ol>
   </section>
 
-  <section id="cv" class="section alt">
+  <section id="faq" class="section alt">
+    <h2>Mini-FAQ</h2>
+    <details><summary>How do we start?</summary><p>With a compact Discovery (2–3 weeks): clarify goals, use-case portfolio, data/tool landscape, risks, KPIs and quick wins.</p></details><details><summary>How do you address privacy & compliance?</summary><p>Privacy by design, clear governance, roles & approvals, minimal data flows. Operates on your preferred infrastructure; GDPR as a guardrail.</p></details><details><summary>What budget should we expect?</summary><p>Depends on scope (team size, integrations). I work transparently with milestones and outcome targets — we’ll estimate precisely in the intro call.</p></details><details><summary>Do you work with our team or independently?</summary><p>Both. I partner alongside your team or take on independent work packages — always with a clean handover.</p></details>
+  </section>
+
+  <section id="experience" class="section">
     <h2>Experience</h2>
-    <div class="timeline">
-      <article><h3>Head of Product Management · NGDA (2020–today)</h3><p>Portfolio & roadmap, e-health infrastructure, product turnaround, team leadership, identity/data projects.</p></article>
-      <article><h3>(Senior) Product Owner & Scrum Master · GLS ITServices (2017–2020)</h3><p>Consumer portal & app, international requirements, Kanban, roadmaps, distributed teams.</p></article>
-      <article><h3>Consulting & Development (Foogoo GmbH) · 2009–2017</h3><p>Digital transformation, marketplace concepts, IT projects, business development, mentoring.</p></article>
-      <article><h3>Diploma Thesis · Daimler (2009–2010)</h3><p>Optimization of a Java enterprise application (persistence), basis for further development.</p></article>
-      <article><h3>Co-Founder & Java Backend Dev · myFoogoo.com (2006–2007)</h3><p>JS→Java infrastructure, XML dialect (lightweight OR-mapper), SSO integration.</p></article>
-      <article><h3>IT Internship · Schenker Switzerland (2005–2006)</h3><p>Hardware inventory with barcode, IT infrastructure relocation, award by Head of IT.</p></article>
-    </div>
+    <div class="timeline"><article><h3>Head of Product Management · NGDA (2020–today)</h3><p>Portfolio & roadmap, e-health infrastructure, product turnaround, team leadership, identity/data projects.</p></article><article><h3>(Senior) Product Owner & Scrum Master · GLS ITServices (2017–2020)</h3><p>Consumer portal & app, international requirements, Kanban, roadmaps, distributed teams.</p></article><article><h3>Consulting & Development (Foogoo GmbH) · 2009–2017</h3><p>Digital transformation, marketplace concepts, IT projects, business development, mentoring.</p></article><article><h3>Diploma Thesis · Daimler (2009–2010)</h3><p>Optimization of a Java enterprise application (persistence), basis for further development.</p></article><article><h3>Co-Founder & Java Backend Dev · myFoogoo.com (2006–2007)</h3><p>JS→Java infrastructure, XML dialect (lightweight OR-mapper), SSO integration.</p></article><article><h3>IT Internship · Schenker Switzerland (2005–2006)</h3><p>Hardware inventory with barcode, IT infrastructure relocation, award by Head of IT.</p></article></div>
     <h3>Technologies & Skills</h3>
     <ul class="tags"><li>AI Strategy</li><li>AI Product Management</li><li>GenAI/LLMs</li><li>Agent Automation</li><li>Task Orchestration</li><li>RAG/Retrieval</li><li>Vector Databases</li><li>Evaluation & Observability</li><li>Guardrails</li><li>Data Governance</li><li>Security & Compliance</li><li>Risk & Policy</li><li>Product Strategy & Roadmaps</li><li>Go-to-Market</li><li>AWS/Azure</li><li>Identity & E-Health</li><li>Scrum/Kanban</li><li>OKR/KPI</li></ul>
   </section>
 
-  <section id="kontakt" class="section">
+  <section id="contact" class="section">
     <h2>Contact</h2>
     <p>I offer a <strong>free 30-minute intro call</strong>. Please share brief context.</p>
+    <div class="cta"><a class="btn cal" href="#" data-cal-open>Book via Calendly</a></div>
     <form class="contact">
       <input type="text" name="company" style="display:none">
       <label>Your name<input type="text" name="name" required></label>
@@ -121,8 +106,19 @@
   </section>
 </main>
 
+<!-- Calendly Modal -->
+<div class="modal" id="calModal" role="dialog" aria-modal="true" aria-labelledby="calTitle">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <div class="modal-title" id="calTitle">Book an intro call</div>
+      <button class="modal-close" id="calClose" aria-label="Close">Close</button>
+    </div>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/kontakt-foogoo/30min" style="min-width:320px;height:100%;"></div>
+  </div>
+</div>
+<noscript><p><a href="https://calendly.com/kontakt-foogoo/30min" target="_blank" rel="noopener">Open Calendly</a></p></noscript>
+
 <footer class="site-footer">
   <p>© 2025 Christian Russ · <a href="../impressum.html">Imprint</a> · <a href="../datenschutz.html">Privacy</a></p>
 </footer>
-</body>
-</html>
+</body></html>
